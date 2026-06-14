@@ -5,11 +5,6 @@ body {
     padding-bottom: 60px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .header-section {
     text-align: center;
     margin-bottom: 50px;
@@ -25,29 +20,35 @@ a {
     color: #bbb;
 }
 
-.explore-card {
-    background-color: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.explore-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-}
-
-.explore-card .card-body {
+.container {
     text-align: center;
 }
 
-.explore-card h5 {
-    margin-bottom: 10px;
-    color: #ccc
+.container ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
 }
 
-.explore-card p {
-    color: #ccc;
+.text-link {
+    position: relative;
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.text-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #00bfff;
+    transition: width 0.3s;
+}
+
+.text-link:hover::after {
+    width: 100%;
 }
 
 footer {
