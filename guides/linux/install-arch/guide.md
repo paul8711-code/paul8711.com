@@ -213,7 +213,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 Then just `exit`, `umount -R /mnt` and `reboot`. At this point, you can remove your boot medium.
 
-First, test your internet connection by running `ping paul8711gamezz.org`.
+First, test your internet connection by running `ping paul8711.com`.
 
 If the connection fails, use `nmtui` or `nmcli` to connect to internet again.
 
